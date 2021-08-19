@@ -5,19 +5,21 @@ rps = ["Rock", "Paper", "Scissors"]
 
 random_int = random.randint(0,2)
 
-if move <=2:
+if move >2 or move<0:
+    print(" you typed an invalid number")
+else:   
     print(f"Computer: {rps[random_int]} ||",f"You: {rps[move]}")
 
-if random_int == move:
-    print("tie game!")
-elif move == random_int + 1:
-    print("You Win!")
-elif random_int == move + 1:
-    print("Computer Wins!")
-elif random_int - 2 == move:
-    print("You Win!")
-elif move - 2 == random_int:
-    print("Computer Wins!")
-elif move > 2:
-    print(" you typed an invalid number")
+    if random_int == move:
+        print("Tie game!")
+    elif move == random_int + 1:
+        print("You Win!")
+    elif random_int == move + 1:
+        print("Computer Wins!")
+    elif random_int - 2 == move:
+        print("You Win!")
+    elif move - 2 == random_int:
+        print("Computer Wins!")
+    
+    
 
