@@ -21,6 +21,11 @@
     
 #     turn_left()
     
+
+
+# in the end tutorial, she said I should go right first instead of going straight
+
+
 # while at_goal() == False:
 
     
