@@ -24,7 +24,7 @@ while not end_of_game:
         
         if guess == chosen_word[position]:
             
-            print("Right")
+            
             display[position] = guess
             
         else:
