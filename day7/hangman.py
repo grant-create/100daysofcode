@@ -9,10 +9,12 @@ display = []
 for thing in chosen_word:
     display.append("_")
 x = ["".join(display)]
-while count < 6 or "_" not in display:
+end_of_game = False
+while not end_of_game:
     
 
-    print(display, count)
+    print(display)
+    print("turns left: ", count, "of 6")
     guess = input("Guess a letter: ").lower()
     count +=1
     
@@ -24,6 +26,14 @@ while count < 6 or "_" not in display:
             
             print("Right")
             display[position] = guess
-            print(display)
+            
         else:
             pass
+    if "_" not in display:
+        end_of_game = True
+        print("you WIN!")
+    elif count > 6:
+        end_of_game = True
+        print("LOSER")
+    else:
+        pass
