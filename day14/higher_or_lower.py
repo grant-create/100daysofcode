@@ -46,7 +46,7 @@ while game_over == False:
         count +=1
         print("Nice, you got it")
         print("")
-        print(f"score: {count}")
+        print(f"Score: {count}")
         name1 = name2
         desc1 = desc2
         country1 = country2
@@ -54,4 +54,4 @@ while game_over == False:
     else:
         game_over = True
         print("oh no you lost, looks like you arent as into celebrities social media following as you thought")
-        print(f"score: {count}")
+        print(f"Score: {count}")
