@@ -1,6 +1,6 @@
-import random
+from random import randint
 
-number = random.randint(1,100)
+number = randint(1,100)
 
 def play():
     difficulty=input("Number guessing game, choose a difficulty: Easy or Hard ").lower()
@@ -24,7 +24,7 @@ def play():
         user_guess = int(input("Guess a number between 1-100 "))
     
         if user_guess == number:
-            print("You Win!")
+            print(f"You Win! The answer was {number}")
             break
             
 play()
