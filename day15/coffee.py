@@ -51,9 +51,14 @@ def get_coffee():
                 dimes = int(input("Dimes: ")) * dime
                 nickels = int(input("Nickels: ")) * nickel
                 pennies = int(input("Pennies: ")) * penny
-                
+                # --------------------------------
+                # Make Change... not finished
+                # --------------------------------
+
                 user_pay = quarters + dimes + nickels + pennies
-                
+                if user_pay > MENU[order]["cost"]:
+                    print(f"here is your change {user_pay-MENU[order]['cost']}")
+
         
             
 
