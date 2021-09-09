@@ -8,6 +8,7 @@ class User:
 
 
 user_1 = User("jack" , 1)
+# using OOP
 
 
  
