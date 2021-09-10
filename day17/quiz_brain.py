@@ -25,7 +25,7 @@ class Quiz_Brain:
         else:
             print("")
             print("Wrong")
-        print(f"The correct answer was {correct_answer}")
+        print(f"")
         print(f"Your current score is {self.score}/{self.question_number}")
         print("")
 
