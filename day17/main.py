@@ -14,3 +14,7 @@ while quiz.still_has_questions():
 
 print(f"You've completed the game")
 print(f"Your final score is {quiz.score}/{quiz.question_number}")
+
+# to get more questions, go to:
+# opentdb.com/api_config.php
+# add api to make more questions, maybe make into django project
